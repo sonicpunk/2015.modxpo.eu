@@ -1,0 +1,199 @@
+name: 2015.modxpo.eu
+data_directory: _gitify/
+backup_directory: _backup/
+data:
+  contexts:
+    class: modContext
+    primary: key
+  context_settings:
+    class: modContextSetting
+    primary: [context_key, key]
+    exclude_keys:
+      - editedon
+  system_settings:
+    class: modSystemSetting
+    primary: key
+    exclude_keys:
+      - editedon
+    where:
+      - 'key:!=': environment
+  content_types:
+    class: modContentType
+    primary: name
+  content:
+    type: content
+    exclude_keys:
+      - createdby
+      - createdon
+      - editedby
+      - editedon
+  categories:
+    class: modCategory
+    primary: category
+  property_sets:
+    class: modPropertySet
+    primary: [id,name]
+  templates:
+    class: modTemplate
+    primary: templatename
+  template_variables:
+    class: modTemplateVar
+    primary: name
+  template_variables_access:
+    class: modTemplateVarTemplate
+    primary: [tmplvarid, templateid]
+  chunks:
+    class: modChunk
+    primary: name
+    extension: .html
+  snippets:
+    class: modSnippet
+    primary: name
+    extension: .php
+  plugins:
+    class: modPlugin
+    primary: name
+    extension: .php
+  plugin_events:
+    class: modPluginEvent
+    primary: [pluginid,event]
+
+  users:
+    class: modUser
+    primary: id
+  user_profiles:
+    class: modUserProfile
+    primary: internalKey
+    exclude_keys:
+      - sessionid
+      - thislogin
+      - lastlogin
+      - logincount
+      - failedloginattempts
+  user_groups:
+    class: modUserGroup
+    primary: id
+  user_group_members:
+    class: modUserGroupMember
+    primary: id
+  user_group_roles:
+    class: modUserGroupRole
+    primary: id
+
+  events:
+    class: modEvent
+    primary: name
+  namespaces:
+    class: modNamespace
+    primary: name
+  mediasources:
+    class: modMediaSource
+    primary: id
+  mediasource_elements:
+    class: sources.modMediaSourceElement
+    primary: [source, object_class, object, context_key]
+  extension_packages:
+    class: modExtensionPackage
+    primary: namespace
+
+
+  dashboards:
+    class: modDashboard
+    primary: [id, name]
+  dashboard_widgts:
+    class: modDashboardWidget
+    primary: id
+  dashboard_widget_placement:
+    class: modDashboardWidgetPlacement
+    primary: [dashboard, widget]
+
+  quickstartbuttons_sets:
+    class: qsbSet
+    primary: name
+    package: quickstartbuttons
+  quickstartbuttons_set_usergroups:
+    class: qsbSetUserGroup
+    primary: [usergoup, set]
+  quickstartbuttons_icons:
+    class: qsbIcon
+    primary: name
+  quickstartbuttons_buttons:
+    class: qsbButton
+    primary: text
+
+  migx_formtab:
+    class: migxFormtab
+    primary: id
+    package: migx
+  migx_formtab_field:
+    class: migxFormtabField
+    primary: id
+  migx_config_element:
+    class: migxConfigElement
+    primary: id
+  migx_element:
+    class: migxElement
+    primary: id
+  migx_config:
+    class: migxConfig
+    primary: id
+
+
+  cb_fields:
+    class: cbField
+    primary: name
+    package: contentblocks
+  cb_layouts:
+    class: cbLayout
+    primary: name
+  cb_templates:
+    class: cbTemplate
+    primary: name
+  cb_defaults:
+    class: cbDefault
+    primary: id
+
+  collections_settings:
+    class: CollectionSetting
+    primary: id
+    package: collections
+  collections_templates:
+    class: CollectionTemplate
+    primary: [id, name]
+  collections_templatecolumns:
+    class: CollectionTemplateColumn
+    primary: id
+  collections_resourcetemplates:
+    class: CollectionResourceTemplate
+    primary: [resource_template, collection_template]
+  collections_selections:
+    class: CollectionSelection
+    primary: [resource, collection]
+
+packages:
+  modx.com:
+    service_url: http://rest.modx.com/extras/
+    packages:
+      - ace
+      - breadcrumb
+      - collections
+      - getresources
+      - fastfield
+      - getcache
+      - getpage
+      - translit
+      - wayfinder
+      - fastfield
+      - formit
+      - updater
+      - locker
+      - pthumb
+      - redirectoid
+      - migx
+      - seopro
+      - seotab
+      - modDevTools
+      - ObfuscateEmail-Revo
+      - babel
+      - xrouting
+      - simplesearch
