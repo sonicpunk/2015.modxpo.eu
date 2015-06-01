@@ -175,13 +175,11 @@ packages:
     service_url: http://rest.modx.com/extras/
     packages:
       - ace
-      - breadcrumb
       - collections
       - getresources
       - fastfield
       - getcache
       - getpage
-      - translit
       - wayfinder
       - fastfield
       - formit
@@ -194,6 +192,5 @@ packages:
       - seotab
       - modDevTools
       - ObfuscateEmail-Revo
-      - babel
-      - xrouting
-      - simplesearch
+      - versionx
+      - googlesitemap

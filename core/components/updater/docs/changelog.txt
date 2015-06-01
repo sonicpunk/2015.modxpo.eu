@@ -1,0 +1,90 @@
+UPDATER - the universal update notifier
+
+IMPORTANT: there was a severe bug up to version 0.2.4-beta, which prevents users from log in the manager ("permission denied" regardless of user permissions). This should be fixed from 0.2.7-beta on. 
+If you encounter this problem, you have to manually deactivate the plugin "Updater notifier" via the database (instructions and further information can be found at http://forums.modx.com/thread/?thread=96613&page=2).
+If you still have this problem with version 0.2.7+, please write to modx-updater@inreti.de or post your problem at the forum thread.
+
+
+0.2.7-beta
+----------
+- fix: try to prevent errors in plugin notifier
+- fix: bug in package notification mail template
+- several micro-fixes
+
+0.2.6-beta
+----------
+- changed mail icon to svg
+- removed base64 inlining of icon (nice idea, but blocked by many clients)
+- send notification regardless of content in debug mode
+- reduced notifications default time to 8h
+- fix: change notifier event to OnWebPageInit to prevent severe login problems at manager login
+
+0.2.4-beta
+----------------------------------
+- included core notification mails
+
+0.2.3-beta
+----------------------------------
+- log notify only if updater.debug is set to true
+- changed some language strings
+- changed and split up settings areas
+- fixed sending on empty last-send timestamp
+- beautified html mail templates
+
+0.2.2-beta
+----------------------------------
+- fixed various bugs with package notification
+- fixed overwrite of settings when updating package
+
+0.2.1-beta
+----------------------------------
+- fixed some minor bugs with sending
+- changed debug messages
+
+0.2.0-beta
+----------------------------------
+- add system settings to manage mail notification
+- add routine to send version digest on a regular base
+- split up into 2 plugins to handle different situations
+- add system setting "updater.mail_format_html" (default: false)
+- add routine to send package information to admins
+- add routine to send core information to admins
+- fixed bug with multiple Mails on browser start
+
+0.1.6-alpha
+----------------------------------
+- added german translations for settings
+- changed widget design for installable packages (not red any more)
+- added lexicons for widget texts in english and german
+- fixed annoying "lexicon not found" bug by calling parser->processelementtags in advance
+- added sudo check for widget display
+- added 'system_perform_maintenance_tasks' permission for widget display
+- permissions are evaluated for showing broadcast message
+
+0.1.5-alpha
+----------------------------------
+- fixed bug with total number of packages
+- take package update refresh setting from core into account
+- added english lexicon
+- fixed problems with cache
+- adjusted css styling for less striking style
+- fixed bug with broadcast message
+
+0.1.4-alpha
+----------------------------------
+- initial restricted audience release
+
+Known Bugs
+----------------------------------
+- widget does not show correct information in case of github custom builds
+
+Upcoming/ideas
+----------------------------------
+- check latest detected system version to observe updates applied
+- add permissions to a policy template to receive mail notifications
+- email updates once to users with proper permission
+- add obfuscying setting for mails
+- localize mails
+- ... sms provider
+- only send package notification if a _new_ package item is detected (currently it also sends a mail after one package is updated and others remain)
+-> make the core version comparison detect dev versions and mark them (experimental)

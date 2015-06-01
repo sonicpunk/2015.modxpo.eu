@@ -1,0 +1,86 @@
+.updater-container {
+    display: table;
+    box-sizing: border-box;
+    width: 50%;
+}
+.dashboard-block-half .updater-container {
+    width: 100%;
+}
+
+.updater-container .row {
+    display: table-row;
+}
+.updater-container .message-container {
+    display: table;
+    width:100%;
+}
+.update-container .message-container .row {
+    display: table-row;
+}
+
+.updater-container .message {
+    display:table-cell;
+    vertical-align:middle;
+}
+.updater-container .updater-actions {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:right;
+}
+.updater-container > .row > div {
+    padding: 1em 1.6168em;
+}
+.updater-container > .row:first-child > div {
+    border-bottom: 10px solid white;
+}
+.updater-container .symbol {
+    display: table-cell;
+    width: 3em;
+    text-align:center;
+    background-color: #e4e9ee;
+    /* background-color: rgb(242,242,242); */
+}
+
+.updater-container .symbol i.icon-fw {
+    width: 1.28571em;
+    height: inherit
+}
+
+.updater-container .up-to-date .symbol {
+    /* background-color: #04B45F ;
+    color: white;
+     */
+    background-color: #e4e9ee;
+    color: #04B45F;
+}
+.updater-container .updateable .symbol {
+   color: #EE1E1E;
+    /* #DF0101;
+   
+     * background-color: #e4e9ee;
+    color: #556c88;
+     */
+}
+.updater-container .updateable .symbol i {
+    color: inherit;
+}
+
+.updater-container .updateable.important .symbol {
+    /*
+     * background-color: #DF0101;
+     * color:white;
+     */
+}
+.updater-container .updateable .symbol i {
+
+}
+.updater-container .text {
+    display: table-cell;
+    background-color: rgb(242,242,242);
+    vertical-align:top;
+}
+.updater-container .area {
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5em;
+}

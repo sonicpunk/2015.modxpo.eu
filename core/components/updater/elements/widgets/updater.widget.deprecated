@@ -1,0 +1,11 @@
+<?php
+
+/* try to get a fresh Updater */
+if (!$modx->loadClass('Updater', MODX_CORE_PATH . 'components/updater/model/', true, true)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[Updater] Could not load  class.');
+    return;
+}
+
+$updater = new Updater($modx, array());
+
+return $updater->generateWidget();
