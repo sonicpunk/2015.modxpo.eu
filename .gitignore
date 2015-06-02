@@ -37,6 +37,8 @@ setup/config.upgrade-advanced.xml
 # ignore some MODX files
 /core/*
 /core/cache/*
+/connectors/
+index.php
 !/core/components/
 
 #ignore qsync file from QNAP
@@ -56,10 +58,7 @@ Gitify
 
 #ignore files after installing MODX
 ht.access
-manager/assets/ext3/adapter/jquery/ext-jquery-adapter-debug.js
-manager/assets/ext3/adapter/prototype/ext-prototype-adapter-debug.js
-manager/assets/ext3/adapter/yui/ext-yui-adapter-debug.js
-manager/templates/default/.gitignore
+manager/*
 
 # ignore gitify backups
 /_backup/*
