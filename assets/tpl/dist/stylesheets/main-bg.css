@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------------------*/
+/*This is main CSS file that intializes BG Images used in this template*/
+/*--------------------------------------------------------------------------*/
+
+
+.promo-section{
+	background-image: url('../images/assets/hall.jpg');
+}
+.contact{
+	background-image: url('../images/assets/modxpo2013_title.jpg');
+}
+.photography-carousel-item-01{
+	background-image: url('http://placehold.it/1500x1050');
+}
+
+.photography-carousel-item-02{
+	background-image: url('http://placehold.it/1500x1050');
+}
+
+.photography-carousel-item-03{
+	background-image: url('http://placehold.it/1500x1050');
+}
+
+.agency-carousel-item-01{
+	background-image: url('../images/assets/munich.jpg');
+}
+
+.agency-carousel-item-02 {
+    background-image: url('../images/assets/modx_com_2014_home_free_web-drk.jpg');
+}
+
+.agency-carousel-item-03{
+	background-image: url('http://placehold.it/1500x1050');
+}
+
+/*Mobile Menu Logo*/
+.menu-collapser {
+    background-image: url('../images/modx-color-sm.svg');
+}

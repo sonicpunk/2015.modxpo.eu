@@ -1,5 +1,4 @@
-/assets/tpl/dist/*
-node_modules/*
+snode_modules/*
 npm-debug.log
 
 # ignore all IIS files
