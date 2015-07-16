@@ -306,24 +306,37 @@ $(document).ready(function() {
       });
 
 
+// only initiate medium and up
 
-    $("#team-carousel").owlCarousel({
-        navigation : true,
-        pagination: false,
-        responsive: true,
-        items: 1,
-        touchDrag: true,
-        navigationText: false,
-        mouseDrag: true,
-        itemsDesktop: [3000,3],
-        itemsDesktopSmall: [1440,3],
-        itemsTablet:[1024,3],
-        itemsTabletSmall: [640,1],
-        itemsMobile: [360,1],
-        autoPlay: false,
-        autoHeight: false,
-      });
+     function teamCarousel() {
 
+         var screenWidth = $(window).width();
+
+         if (screenWidth >= 767) {
+
+             $("#team-carousel").owlCarousel({
+                 navigation : true,
+                 pagination: false,
+                 responsive: true,
+                 items: 1,
+                 touchDrag: true,
+                 navigationText: false,
+                 mouseDrag: true,
+                 itemsDesktop: [3000,3],
+                 itemsDesktopSmall: [1440,3],
+                 itemsTablet:[1024,3],
+                 itemsTabletSmall: [640,1],
+                 itemsMobile: [360,1],
+                 autoPlay: false,
+                 autoHeight: false
+             });
+         }else{
+             $('.team-carousel.owl-carousel').show();
+         }
+
+     }
+
+     teamCarousel();
 
     $("#client-carousel").owlCarousel({
         navigation : true,
