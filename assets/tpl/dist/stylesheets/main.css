@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6{
 /*Common Spacing and Padding*/
 
 .page-section{
-	padding: 100px 0;
+	padding: 80px 0;
 }
 .separator-section{
 	padding: 100px 0;
@@ -325,12 +325,12 @@ font-family: 'Raleway', sans-serif; font-weight:600;
 	margin: 0;
 	padding: 0;
 	font-size: 72px;
-	font-size: 72px;
+
 }
 .action-text  h1 > span{
 	font-family: 'Montserrat', sans-serif; font-weight:200;
-	font-size: 72px;
-	font-size: 72px;
+	font-size: 55px;
+	line-height: 1.2;
 	letter-spacing: 12px;
 	text-transform: uppercase;
 }
@@ -704,13 +704,13 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
 
 /*ABOUT*/
 .about{
-	padding: 180px 0;
+	padding: 100px 0;
 }
 #features-slider {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    padding: 0;
+
 }
 .features-details.default {
     display: block;
@@ -1433,6 +1433,7 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
 
 .team-wrap .owl-theme .owl-controls{
 	margin-top: 0;
+	margin-bottom: 15px;
 }
 .testimonial-carousel{
 	padding-top: 100px;
@@ -1803,3 +1804,18 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
             width: 33%;
         }
     }
+
+/* PRICING */
+
+	.pricing-section h1 {
+		margin-bottom: 15px;
+	}
+
+	.pricing-section .btn {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.btn--link:hover, .btn--link:focus {
+		color: #fd4326;
+	}
