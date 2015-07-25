@@ -434,7 +434,7 @@ font-family: 'Raleway', sans-serif; font-weight:600;
 }
 
 .hero-image-bg{
-	background:url(../images/bg/07.jpg) center center no-repeat;
+
 	background-size: cover;
 }
 .hero-caps{
@@ -554,7 +554,7 @@ font-family: 'Raleway', sans-serif; font-weight:600;
 .main-caps{
 }
 .main-caps > h3{
-	font-family: 'Montserrat', sans-serif; font-weight:700;
+	font-family: 'Montserrat', sans-serif;
 	font-size:24px;
 	line-height: 36px;
 	font-weight: normal;
@@ -570,7 +570,7 @@ font-family: 'Raleway', sans-serif; font-weight:600;
 .main-caps > h6{
 	margin-top: 20px;
 	letter-spacing: 2px;
-	font-family: 'Montserrat', sans-serif; font-weight:400;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 12px;
 	line-height:24px;
@@ -1827,3 +1827,51 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
 		width: 210px;
 		height: 53px;
 	}
+
+
+/* Key Visual */
+
+	.key-visual__text img{
+
+		width:80%;
+		height:80%;
+		position: absolute;
+		top: 0;
+
+
+	}
+
+	.key-visual {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	@media screen and (min-width: 769px) {
+		.key-visual__text img{
+			top: 20%;
+
+		}
+
+	}
+
+	@media screen and (min-width: 980px) {
+		.key-visual__text img{
+			width: 50%;
+			height: 50%;
+			left: 12.5%;
+		}
+	}
+
+	@media screen and (min-width: 1283px) {
+		.key-visual__text img{
+			left: 15%;
+		}
+	}
+
+	@media screen and (min-width: 1500px) {
+		.key-visual__text img{
+			left: 18%;
+		}
+	}
+
