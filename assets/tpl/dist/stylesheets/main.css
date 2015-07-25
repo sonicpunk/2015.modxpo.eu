@@ -212,6 +212,9 @@ font-family: 'Montserrat', sans-serif; font-weight:200;
     text-transform: uppercase;
 }
 
+@media screen and (){
+
+}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 03 - COMMON ELEMENTS & TYPOGRAPHY */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -1818,4 +1821,9 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
 
 	.btn--link:hover, .btn--link:focus {
 		color: #fd4326;
+	}
+
+	.main-logo--content_pages {
+		width: 210px;
+		height: 53px;
 	}

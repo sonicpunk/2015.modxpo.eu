@@ -160,6 +160,9 @@
 	.standard-header{
 		display: none !important;
 	}
+	.standard-nav {
+		margin: 0;
+	}
 	
 }
 
@@ -397,7 +400,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -537,7 +540,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -677,7 +680,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -817,7 +820,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -957,7 +960,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -1104,7 +1107,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -1245,7 +1248,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -1384,7 +1387,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
@@ -1523,7 +1526,7 @@
 	}
 	.action-text h1 > span {
 	    font-size: 28px;
-	    line-height: 35px;
+	    line-height: 1.2;
 	}
 	.action-text h3 > span {
 	    font-size: 14px;
