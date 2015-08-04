@@ -1956,3 +1956,50 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
         margin: 40px 0 40px 0;
     }
 
+    .t-2 h3{
+        margin: 40px 0 20px 0;
+    }
+/* schedule */
+
+    .schedule {
+        margin: 30px 0 30px 0;
+        width: 100%;
+    }
+
+    .schedule td, .schedule th{
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .schedule__time {
+        width: 19%;
+    }
+    .schedule__speaker {
+        width: 26%;
+    }
+    .schedule__session {
+        width: 50%;
+    }
+
+    .schedule tr:nth-child(even) {
+        background-color:#eeeeee;
+    }
+
+    .schedule td {
+        border-right: 1px solid #cccccc;
+        font-size: 12px;
+    }
+
+    .schedule td:first-child {
+        border-left: 1px solid #cccccc;
+    }
+
+    .event__time {
+        padding-right: 5px;
+        font-size: 14px;
+    }
