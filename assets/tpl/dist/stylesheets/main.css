@@ -1776,6 +1776,10 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
 
 /*SPONSORS*/
 
+    .sponsor__key_logo {
+        margin-top: 40px;
+    }
+
     .sponsors {
         padding-top: 40px;
     }
@@ -1801,7 +1805,7 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
 
     @media screen and (min-width: 620px) {
         .sponsor_list {
-            padding: 100px 0 0;
+            /*padding: 100px 0 0;*/
         }
     }
 
@@ -2002,4 +2006,19 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
     .event__time {
         padding-right: 5px;
         font-size: 14px;
+    }
+
+
+    /*  speaker section - thanks Oliver!  */
+
+    .team-static .speaker { padding-bottom: 4rem; }
+
+    @media all and (min-width: 992px) {
+        .team-static .col-md-4:nth-of-type(3n+1) {
+            clear: both;
+        }
+    }
+
+    .team-static .team-stage .img-responsive{
+        display: inline;
     }
