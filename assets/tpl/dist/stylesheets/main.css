@@ -2026,3 +2026,10 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
     .team-static .team-stage .img-responsive{
         display: inline;
     }
+
+
+    /* general template changes */
+
+    .page ul li{
+        color: #777;
+    }
