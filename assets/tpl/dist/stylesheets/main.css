@@ -2027,6 +2027,10 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
         display: inline;
     }
 
+    .image--round {
+        padding: 0 40px;
+        border-radius: 100%;
+    }
 
     /* general template changes */
 
