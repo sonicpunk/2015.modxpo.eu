@@ -2047,6 +2047,6 @@ font-family: 'Open Sans', sans-serif; font-weight:300;
         color: #003399;
     }
 
-    .main_content .btn-odin-color {
+    .main_content .btn-odin-color, .main_content .btn-odin-color:hover {
         color: #ffffff;
     }
