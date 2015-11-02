@@ -58,3 +58,5 @@ manager/*
 # ignore gitify backups
 /_backup/*
 /setup/
+
+assets/webmaster/*
